@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fightSence {
+  max-width: 40rem;
+  box-sizing: border-box;
+  display: grid;
+  /* 4列，每一列占14rem */
+  grid-template-columns: repeat(4,9rem);
+  /* grid-template-rows: 24rem, 18rem; */
+  /* 排间距 */
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.adventurer {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: grid;
+  grid-row-gap: 0.3rem;
+  padding: 0.5rem;
+  background-color: #3C454F;
+  /* grid-template-rows: 85px; */
+}
+
+.monster {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 0.5rem;
+  /* border: 4px solid blue; */
+  background-color: #20222C;
+  /* grid-template-rows: 2rem, 20rem, 2rem, 2rem,2rem; */
+  grid-row-gap: 0.5rem;
+  grid-column: 1 / span 4;
+}
+
+.clock {
+  width: 100%;
+  height: 1.6rem;
+  text-align: center;
+  color: red;
+  position:absolute;top:10px;left:10px;
+  user-select: none;
+  /* margin-top: -11rem; */
+}
+
+.monster > div > img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+  /* margin-top: -2rem; */
+}
+
+.adventurer > img {
+  width: 100%;
+  height: 100%;
+  /* justify-content: center; */
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.monster > h6 {
+  width: 100%;
+  height: 1.6rem;
+  border: 2px solid lightblue;
+  text-align: center;
+  margin-bottom: 0;
+  color: lightblue;
+  cursor: pointer;
+}
+
+.adventurer > h6 {
+  height: 1.6rem;
+  margin-top: 2px;
+  border: 2px solid lightblue;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 2px;
+  color: lightblue;
+  cursor: pointer;
+  /* justify-content: center; */
+}
+
+.BloodStrip {
+  width: 100%;
+  height: 1.6rem;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 2px;
+  user-select: none;
+  /* margin-top: 0.5rem; */
+}
+
+/* 血量数值 */
+.BloodStrip > div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  /* display: inline-block; */
+}
+/* 人的血条 */
+.BloodStrip > div > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: -1.5rem;
+  background-color: red;
+}
+
+.buttonReset{
+      width: 60px;
+      height: 25px;
+      display: inline-block;
+      background: orange;
+      text-align: center;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin: 2px;
+      cursor: pointer;
+
+}
+.buttonReset:hover {
+  background-color: red;
+}
+/* 
+.ReadingStrip{
+  width: 100%;
+  height: 1rem + 3px;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+.ReadingStrip>div{
+  width: 0%;
+  height: 1rem;
+  background-color: lightskyblue;
+  border-radius: 0.3rem;
+}
+.ReadingStrip1{
+  width: 100%;
+  height: 1rem + 3px;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+.ReadingStrip1>div{
+  width: 0%;
+  height: 1rem;
+  background-color: lightskyblue;
+  border-radius: 0.3rem;
+}
+.ReadingStrip2{
+  width: 100%;
+  height: 1rem;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+.ReadingStrip2>div{
+  width: 0%;
+  height: 1rem;
+  background-color: lightskyblue;
+  border-radius: 0.3rem;
+}
+.ReadingStrip3{
+  width: 100%;
+  height: 1rem;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+.ReadingStrip3>div{
+  width: 0%;
+  height: 1rem;
+  background-color: lightskyblue;
+  border-radius: 0.3rem;
+}
+.ReadingStrip4{
+  width: 100%;
+  height: 1rem;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+.ReadingStrip4>div{
+  width: 0%;
+  height: 1rem;
+  background-color: lightskyblue;
+  border-radius: 0.3rem;
+} */
+
+.skillbutton {
+  width: 100%;
+  border: 1px solid red;
+  background-color: rgb(128, 171, 84);
+  text-align: 'center';
+  margin-bottom: "0.5rem";
+}
+
+.skillbutton:hover {
+  background-color: red;
+}
+
+
+.select {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.heroForm {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 2.1rem;
+  border: 2px solid red
+}
